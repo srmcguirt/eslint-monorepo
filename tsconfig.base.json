@@ -1,0 +1,23 @@
+{
+  "$schema":"https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@srmcguirt/eslint-config": ["packages/eslint-config/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
