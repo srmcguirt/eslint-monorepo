@@ -1,1 +1,2 @@
-export * from './partial-unknown'
+export type { PartialUnknown } from './partial-unknown'
+export { fromEntries } from './from-entries'

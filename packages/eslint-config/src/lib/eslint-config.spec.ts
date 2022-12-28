@@ -1,11 +1,11 @@
-import { eslintConfig } from './eslint-config';
+import { eslintFlatConfig } from './eslint-config';
 
-describe('eslintConfig', () => {
+describe('eslintFlatConfig', () => {
 
   const config = 'eslint:recommended'
 
 
-  it('should work', () => {
-    expect(eslintConfig(config)).toEqual('eslint-config');
+  it('should accept predefined config', () => {
+    expect(eslintFlatConfig(config)).toEqual('eslint:recommended');
   });
 });

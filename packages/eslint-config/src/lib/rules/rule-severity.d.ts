@@ -1,1 +1,1 @@
-export type RuleSeverity = 'off' | 'warn' | 'error' | number
+export type RuleSeverity = 'off' | 'warn' | 'error' | '0' | '1' | '2'

@@ -1,4 +1,4 @@
-import type { ESLint, Linter } from 'eslint'
+import type { TSESLint } from '@typescript-eslint/utils'
 import type { LinterOptions } from './linter-options'
 import type { LanguageOptions } from './language-options'
 
@@ -7,8 +7,8 @@ export interface FlatConfigRecord {
   ignores?: string[]
   languageOptions?: LanguageOptions
   linterOptions?: LinterOptions
-  processor?: string | Linter.Processor
+  processor?: string | TSESLint.Linter.Processor
   plugins?: string[]
-  rules?: Record<string, Linter.RulesRecord>
+  rules?: TSESLint.Linter.Config['rules']
   settings?: Record<string, unknown>
 }

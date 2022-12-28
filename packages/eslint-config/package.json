@@ -1,5 +1,5 @@
 {
-  "$schema":"https://json.schemastore.org/package",
+  "$schema": "https://json.schemastore.org/package",
   "name": "@srmcguirt/eslint-config",
   "description": "ESLint shared config",
   "repository": "srmcguirt/eslint-config",
@@ -10,5 +10,25 @@
   "packageManager": "pnpm@7.20.0",
   "scripts": {
     "dev": "vitest dev"
+  },
+  "dependencies": {
+    "@babel/core": "latest",
+    "@babel/eslint-parser": "latest",
+    "@babel/eslint-plugin": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/types": "latest",
+    "@typescript-eslint/eslint-plugin": "latest",
+    "@typescript-eslint/experimental-utils": "latest",
+    "@typescript-eslint/parser": "latest",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jsonc-eslint-parser": "latest",
+    "vue-eslint-parser": "latest",
+    "yaml-eslint-parser": "latest"
+  },
+  "devDependencies": {
+    "eslint": "latest"
   }
 }
