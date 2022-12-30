@@ -1,5 +1,5 @@
 {
-  "$schema":"https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
+  "$schema": "https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
   "compileOnSave": false,
   "compilerOptions": {
     "rootDir": ".",
@@ -16,7 +16,20 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@srmcguirt/eslint-config": ["packages/eslint-config/src/index.ts"]
+      "@srmcguirt/eslint-config": ["packages/eslint-config/src/index.ts"],
+      "@srmcguirt/eslint-config-standard": [
+        "packages/eslint-config-standard/src/index.ts"
+      ],
+      "@srmcguirt/eslint-plugin-import": [
+        "packages/eslint-plugin-import/src/index.ts"
+      ],
+      "@srmcguirt/eslint-plugin-n": ["packages/eslint-plugin-n/src/index.ts"],
+      "@srmcguirt/eslint-plugin-promise": [
+        "packages/eslint-plugin-promise/src/index.ts"
+      ],
+      "@srmcguirt/eslint-plugin-unicorn": [
+        "packages/eslint-plugin-unicorn/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

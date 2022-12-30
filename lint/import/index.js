@@ -1,12 +1,7 @@
-// import { flatCompat } from '../flat-compat.js'
-import { rules } from 'eslint-plugin-import'
-import recommended from 'eslint-plugin-import/config/recommended.js'
+import importPlugin from 'eslint-plugin-import'
 
-const configs = {
-  recommended,
-}
+const { rules } = importPlugin
 
 export default {
-  configs,
   rules,
 }

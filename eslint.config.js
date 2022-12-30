@@ -2,9 +2,10 @@ import babelParser from '@babel/eslint-parser'
 import typescriptParser from '@typescript-eslint/parser'
 import typescriptPlugin from '@typescript-eslint/eslint-plugin'
 import importConfig from './lint/import/index.js'
+import standardConfig from './lint/standard/index.js'
 
 export default [
-  'eslint:recommended',
+  standardConfig,
   {
     languageOptions: {
       ecmaVersion: 'latest',
