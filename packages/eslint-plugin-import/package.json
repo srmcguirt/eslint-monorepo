@@ -24,8 +24,10 @@
     "@types/eslint": "8.4.10",
     "eslint-plugin-import": "2.26.0"
   },
+  "node": ">=14.16",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
-  }
+  },
+  "packageManager": "pnpm@7.21.0"
 }

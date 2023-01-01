@@ -85,5 +85,5 @@ export const bestPracticesRules: BestPracticesRules = {
 }
 
 export default {
-
+  bestPracticesRules,
 }

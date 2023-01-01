@@ -11,26 +11,39 @@
     "importHelpers": true,
     "target": "es2018",
     "module": "esnext",
-    "lib": ["es2018", "dom"],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@srmcguirt/eslint-config": ["packages/eslint-config/src/index.ts"],
+      "@srmcguirt/eslint-config": [
+        "packages/eslint-config/src/index.ts"
+      ],
       "@srmcguirt/eslint-config-standard": [
         "packages/eslint-config-standard/src/index.ts"
       ],
       "@srmcguirt/eslint-plugin-import": [
         "packages/eslint-plugin-import/src/index.ts"
       ],
-      "@srmcguirt/eslint-plugin-n": ["packages/eslint-plugin-n/src/index.ts"],
+      "@srmcguirt/eslint-plugin-n": [
+        "packages/eslint-plugin-n/src/index.ts"
+      ],
       "@srmcguirt/eslint-plugin-promise": [
         "packages/eslint-plugin-promise/src/index.ts"
       ],
       "@srmcguirt/eslint-plugin-unicorn": [
         "packages/eslint-plugin-unicorn/src/index.ts"
+      ],
+      "@srmcguirt/eslint-types": [
+        "packages/eslint-types/src/index.ts"
       ]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

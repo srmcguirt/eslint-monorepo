@@ -1,0 +1,41 @@
+{
+  "name": "@srmcguirt/eslint-types",
+  "version": "0.0.0",
+  "description": "Reformatted types for ESLint",
+  "repository": "srmcguirt/eslint-types",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "7.20.7",
+    "@babel/eslint-parser": "7.19.1",
+    "@babel/eslint-plugin": "7.19.1",
+    "@babel/preset-env": "7.20.2",
+    "@babel/types": "7.20.7",
+    "@eslint/eslintrc": "1.4.1",
+    "@types/eslint": "8.4.10",
+    "@typescript-eslint/eslint-plugin": "5.47.1",
+    "@typescript-eslint/utils": "5.47.1",
+    "@typescript-eslint/parser": "5.47.1",
+    "@typescript-eslint/types": "5.47.1"
+  },
+  "packageManager": "pnpm@7.21.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "node": ">=14.16"
+}

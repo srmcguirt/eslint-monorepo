@@ -1,1 +1,1 @@
-export { defineConfig } from './lib/eslint-config';
+export { eslintConfig } from './lib/eslint-config';
