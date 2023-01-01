@@ -1,3 +1,7 @@
-export function eslintPluginImport(): string {
-  return 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import'
+
+const { rules } = importPlugin
+
+export default {
+  rules,
 }

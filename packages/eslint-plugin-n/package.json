@@ -1,5 +1,29 @@
 {
   "name": "@srmcguirt/eslint-plugin-n",
-  "version": "0.0.1",
-  "type": "module"
+  "version": "0.0.0",
+  "description": "Reformatted node plugin for ESLint",
+  "repository": "srmcguirt/eslint-plugin-n",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "eslint-plugin-n": "15.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }

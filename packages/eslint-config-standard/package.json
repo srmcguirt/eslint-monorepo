@@ -1,6 +1,6 @@
 {
   "name": "@srmcguirt/eslint-config-standard",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "dependencies": {
     "eslint-config-standard": "17.0.0"
@@ -10,5 +10,9 @@
     "@srmcguirt/eslint-plugin-import": "workspace:*",
     "@srmcguirt/eslint-plugin-n": "workspace:*",
     "@srmcguirt/eslint-plugin-promise": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

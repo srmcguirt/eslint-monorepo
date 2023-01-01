@@ -1,5 +1,30 @@
 {
   "name": "@srmcguirt/eslint-plugin-unicorn",
-  "version": "0.0.1",
-  "type": "module"
+  "version": "0.0.0",
+  "description": "Reformatted Unicorn plugin for ESLint",
+  "repository": "srmcguirt/eslint-plugin-unicorn",
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "eslint-plugin-unicorn": "latest"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
+
