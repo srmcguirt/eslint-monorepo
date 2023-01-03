@@ -1,1 +1,1 @@
-export * from './lib/eslint-plugin-unicorn';
+export * from './lib/eslint-plugin-unicorn'

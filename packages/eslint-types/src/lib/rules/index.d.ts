@@ -1,3 +1,3 @@
-import { RuleConfig } from './rule-config'
+import type { RuleConfig } from './rule-config'
 
-export type Rules = Partial<Record<string, RuleConfig>>;
+export type Rules = Partial<Record<string, RuleConfig>>

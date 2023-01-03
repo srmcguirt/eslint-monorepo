@@ -20,6 +20,9 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build:n": "jsdoc -t node_modules/tsd-jsdoc/dist -r ../../node_modules/eslint-plugin-n/lib -d ."
+  },
   "devDependencies": {
     "@babel/core": "7.20.7",
     "@babel/eslint-parser": "7.19.1",
@@ -28,11 +31,14 @@
     "@babel/types": "7.20.7",
     "@eslint/eslintrc": "1.4.1",
     "@types/eslint": "8.4.10",
+    "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
     "@typescript-eslint/types": "5.47.1",
     "@typescript-eslint/utils": "5.47.1",
-    "eslint": "8.31.0"
+    "eslint": "8.31.0",
+    "jsdoc": "^3.6.3",
+    "tsd-jsdoc": "^2.5.0"
   },
   "publishConfig": {
     "access": "public",

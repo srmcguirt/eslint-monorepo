@@ -79,8 +79,8 @@ export interface BestPracticesRules {
 
 export const bestPracticesRules: BestPracticesRules = {
   'accessor-pairs': 'error',
-  "array-callback-return": ["error", {
-    "allowImplicit": false,
+  'array-callback-return': ['error', {
+    allowImplicit: false,
   }],
 }
 

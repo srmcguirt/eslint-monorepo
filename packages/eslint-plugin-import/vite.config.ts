@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
+import { join } from 'path'
+import { defineConfig } from 'vite'
 
-import viteTsConfigPaths from 'vite-tsconfig-paths';
-import dts from 'vite-plugin-dts';
-import { join } from 'path';
+import viteTsConfigPaths from 'vite-tsconfig-paths'
+import dts from 'vite-plugin-dts'
 
 export default defineConfig({
   plugins: [
@@ -43,4 +43,4 @@ export default defineConfig({
     environment: 'jsdom',
     include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
-});
+})

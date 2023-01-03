@@ -1,5 +1,5 @@
-import type { FlatConfig } from "./schema/flat-config"
 import type { TSESLint } from '@typescript-eslint/utils'
+import type { FlatConfig } from './schema/flat-config'
 
 export function defineConfig(config: FlatConfig): FlatConfig {
   return config

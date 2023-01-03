@@ -1,1 +1,1 @@
-export * from './lib/eslint-plugin-promise';
+export * from './lib/eslint-plugin-promise'

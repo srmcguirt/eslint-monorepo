@@ -1,1 +1,1 @@
-export type EcmaVersion = number | 'latest';
+export type EcmaVersion = number | 'latest'

@@ -6,24 +6,43 @@
   "packageManager": "pnpm@7.21.0",
   "license": "MIT",
   "scripts": {
+    "clean": "lerna clean && rimraf dist pnpm-lock.yaml",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "generate:rules": "tsx ./scripts/generate-rule-files/cli.ts"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.33.1",
+    "@antfu/eslint-config": "^0.34.0",
     "@antfu/ni": "^0.18.8",
+    "@poppinss/cliui": "~3.0.5",
+    "@types/eslint": "~8.4.10",
+    "@types/json-schema": "~7.0.11",
+    "@types/node": "~18.11.18",
     "@vitest/coverage-c8": "0.26.2",
     "@vitest/ui": "0.26.2",
     "bumpp": "^8.2.1",
+    "change-case": "~4.1.2",
     "eslint": "^8.31.0",
+    "eslint-gitignore": "~0.1.0",
     "esno": "^0.16.3",
+    "expect-type": "~0.15.0",
+    "json-schema": "~0.4.0",
+    "json-schema-to-typescript": "~11.0.2",
+    "lerna": "^6.3.0",
+    "rimraf": "^3.0.2",
+    "ts-dedent": "~2.2.0",
+    "tsx": "~3.12.1",
     "typescript": "4.9.4",
-    "vite": "4.0.3",
+    "upper-case-first": "~2.0.2",
+    "vite": "4.0.4",
     "vite-plugin-dts": "1.7.1",
     "vite-plugin-eslint": "1.8.1",
     "vite-tsconfig-paths": "4.0.3",
     "vitest": "0.25.8"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

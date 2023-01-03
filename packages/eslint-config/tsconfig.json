@@ -1,5 +1,5 @@
 {
-  "$schema":"https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
+  "$schema": "https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "module": "ESNext",

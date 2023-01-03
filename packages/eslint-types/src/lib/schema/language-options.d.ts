@@ -1,4 +1,4 @@
-import type { EcmaVersion, SourceType, Globals, Parser } from '.'
+import type { EcmaVersion, Globals, Parser, SourceType } from '.'
 
 export interface LanguageOptions {
   /* The ECMAScript version (or revision number). */
@@ -12,6 +12,4 @@ export interface LanguageOptions {
   /* The parser options to use. */
   parserOptions?: Record<string, unknown>
 }
-
-
 

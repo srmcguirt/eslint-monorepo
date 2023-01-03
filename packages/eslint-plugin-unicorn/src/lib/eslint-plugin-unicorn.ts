@@ -1,3 +1,3 @@
 export function eslintPluginUnicorn(): string {
-  return 'eslint-plugin-unicorn';
+  return 'eslint-plugin-unicorn'
 }
