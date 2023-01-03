@@ -1,1 +1,1 @@
-export * from './lib/eslint-types';
+export * from './lib/eslint-types'

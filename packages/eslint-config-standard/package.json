@@ -1,15 +1,16 @@
 {
   "name": "@srmcguirt/eslint-config-standard",
-  "version": "0.0.0",
   "type": "module",
-  "repository": "srmcguirt/eslint-config-standard",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.21.0",
   "license": "MIT",
+  "repository": "srmcguirt/eslint-config-standard",
   "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -18,19 +19,21 @@
   "files": [
     "dist"
   ],
+  "peerDependencies": {
+    "@srmcguirt/eslint-plugin-import": "workspace:*",
+    "@srmcguirt/eslint-plugin-n": "workspace:*",
+    "@srmcguirt/eslint-plugin-promise": "workspace:*",
+    "eslint": "^8.0.1"
+  },
   "dependencies": {
     "eslint-config-standard": "17.0.0"
   },
-  "peerDependencies": {
-    "eslint": "^8.0.1",
-    "@srmcguirt/eslint-plugin-import": "workspace:*",
-    "@srmcguirt/eslint-plugin-n": "workspace:*",
-    "@srmcguirt/eslint-plugin-promise": "workspace:*"
+  "devDependencies": {
+    "eslint": "8.31.0"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "node": ">=14.16",
-  "packageManager": "pnpm@7.21.0"
+  "node": ">=14.16"
 }

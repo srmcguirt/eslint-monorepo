@@ -1,6 +1,6 @@
 {
   "$schema":"https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "module": "ESNext",
     "forceConsistentCasingInFileNames": true,

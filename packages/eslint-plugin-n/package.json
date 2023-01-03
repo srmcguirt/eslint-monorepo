@@ -1,16 +1,17 @@
 {
   "name": "@srmcguirt/eslint-plugin-n",
-  "version": "0.0.0",
-  "description": "Reformatted node plugin for ESLint",
-  "repository": "srmcguirt/eslint-plugin-n",
-  "license": "MIT",
-  "sideEffects": false,
   "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.21.0",
+  "description": "Reformatted node plugin for ESLint",
+  "license": "MIT",
+  "repository": "srmcguirt/eslint-plugin-n",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -22,9 +23,12 @@
   "dependencies": {
     "eslint-plugin-n": "15.6.0"
   },
+  "devDependencies": {
+    "eslint": "8.31.0"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "packageManager": "pnpm@7.21.0"
+  "node": ">=14.16"
 }

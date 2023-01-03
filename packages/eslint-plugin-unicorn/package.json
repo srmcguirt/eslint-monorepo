@@ -1,16 +1,17 @@
 {
   "name": "@srmcguirt/eslint-plugin-unicorn",
-  "version": "0.0.0",
-  "description": "Reformatted Unicorn plugin for ESLint",
-  "repository": "srmcguirt/eslint-plugin-unicorn",
-  "license": "MIT",
-  "sideEffects": false,
   "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.21.0",
+  "description": "Reformatted Unicorn plugin for ESLint",
+  "license": "MIT",
+  "repository": "srmcguirt/eslint-plugin-unicorn",
+  "sideEffects": false,
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "main": "./dist/index.cjs",
@@ -22,10 +23,13 @@
   "dependencies": {
     "eslint-plugin-unicorn": "latest"
   },
+  "devDependencies": {
+    "eslint": "8.31.0"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "packageManager": "pnpm@7.21.0"
+  "node": ">=14.16"
 }
 
