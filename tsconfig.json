@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "importHelpers": true,
     "target": "es2018",
+    "types": ["node", "vite/client"],
     "module": "esnext",
     "lib": [
-      "es2018",
+      "esnext",
       "dom"
     ],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
     "paths": {
       "@srmcguirt/eslint-config": [
         "packages/eslint-config/src/index.ts"
@@ -42,11 +42,9 @@
       ]
     }
   },
-  "include": [
-    "./packages/**/*"
-  ],
   "exclude": [
-    "node_modules",
+    "**/dist/**",
+    "**/node_modules/**",
     "tmp"
   ]
 }

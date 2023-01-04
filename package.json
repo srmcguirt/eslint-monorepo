@@ -11,7 +11,7 @@
     "lint:fix": "nr lint --fix",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "generate:rules": "tsx ./scripts/generate-rule-files/cli.ts"
+    "generate:rules": "tsx ./tools/generate/generate-rule-files/cli.ts"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.34.0",
