@@ -2,6 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Microsoft/tsconfig-json-schema/master/tsconfig.json",
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
