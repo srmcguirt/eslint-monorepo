@@ -1,0 +1,36 @@
+{
+  "name": "@srmcguirt/eslint-repo-shared",
+  "version": "0.0.0",
+  "description": "ESLint monorepo shared config",
+  "type": "module",
+  "exports": {
+      ".": {
+          "types": "./src/main.ts",
+          "import": "./out/main.js"
+      },
+      "./server": {
+          "types": "./src/server/index.ts",
+          "import": "./out/server/index.js"
+      },
+      "./web": {
+          "types": "./src/web/index.ts",
+          "import": "./out/web/index.js"
+      },
+      "./*": {
+          "types": "./src/*.ts",
+          "import": "./out/*.js"
+      }
+  },
+  "scripts": {
+      "build": "rm -rf out && node esbuild.js",
+      "check": "npx tsc",
+      "lint": "npx eslint src/**/*.ts"
+  },
+  "devDependencies": {
+      "eslint": "^8.31.0",
+      "@srmcguirt/eslint-repo-config": "workspace:*",
+      "@types/node": "^18.11.18",
+      "@typescript-eslint/eslint-plugin": "^5.47.1",
+      "@typescript-eslint/parser": "^5.47.1"
+  }
+}

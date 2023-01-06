@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+      "module": "esnext",
+      "moduleResolution": "NodeNext",
+      "target": "esnext",
+
+      "forceConsistentCasingInFileNames": true,
+      "allowUnreachableCode": true,
+
+      "esModuleInterop": true,
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+
+      "strict": true,
+      "noEmit": true,
+      "watch": true,
+      "preserveWatchOutput": true,
+      "plugins": [
+        {
+          "transform": "typescript-transform-paths"
+        },
+        {
+          "transform": "typescript-transform-paths",
+          "afterDeclarations": true
+        }
+      ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "@srmcguirt/eslint-repo-config/typescript/tsconfig.node.json",
+  "compilerOptions": {
+      "rootDir": "./src/",
+      "outDir": "./out/"
+  },
+  "include": ["./src/"],
+  "exclude": [
+      "**/node_modules",
+      "**/.*/"
+  ]
+}

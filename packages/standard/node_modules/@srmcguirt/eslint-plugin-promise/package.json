@@ -1,0 +1,36 @@
+{
+  "name": "@srmcguirt/eslint-plugin-promise",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.21.0",
+  "description": "Reformatted promise plugin for ESLint",
+  "license": "MIT",
+  "repository": "srmcguirt/promise",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "eslint-plugin-promise": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "eslint": "8.31.0",
+    "typescript": "^4.9.4"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "node": ">=14.16"
+}

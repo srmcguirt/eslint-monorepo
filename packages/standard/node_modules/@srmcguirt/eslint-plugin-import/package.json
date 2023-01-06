@@ -1,0 +1,38 @@
+{
+  "name": "@srmcguirt/eslint-plugin-import",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.21.0",
+  "description": "Reformatted import plugin for ESLint",
+  "license": "MIT",
+  "repository": "srmcguirt/import",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@eslint/eslintrc": "1.4.1",
+    "@types/eslint": "8.4.10",
+    "eslint-plugin-import": "2.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "eslint": "8.31.0",
+    "typescript": "^4.9.4"
+  },
+  "node": ">=14.16",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
